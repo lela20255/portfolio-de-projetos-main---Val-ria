@@ -1,0 +1,118 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Estilos da seção de acessibilidade */
+.acessibilidade {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#opcoesDeAcessibilidade {
+    display: none;
+    flex-direction: column;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+}
+
+#botaoDeAcessibilidade.rotacao-botao {
+    transform: rotate(90deg);
+}
+
+#opcoesDeAcessibilidade.apresenta-lista {
+    display: flex;
+}
+
+/* Estilos do conteúdo */
+.conteudo {
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+/* Modo Escuro */
+.modo-escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Alto Contraste */
+.alto-contraste {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Ajuste de Largura de Texto */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+body[max-width="90%"] {
+    max-width: 90%;
+}
+
+body[max-width="80%"] {
+    max-width: 80%;
+}
+
+body[max-width="70%"] {
+    max-width: 70%;
+}
+
+/* Ajuste de Espaçamento das Letras */
+body {
+    letter-spacing: 0px;
+}
+
+body[letter-spacing="0.5px"] {
+    letter-spacing: 0.5px;
+}
+
+body[letter-spacing="1px"] {
+    letter-spacing: 1px;
+}
+
+body[letter-spacing="1.5px"] {
+    letter-spacing: 1.5px;
+}
